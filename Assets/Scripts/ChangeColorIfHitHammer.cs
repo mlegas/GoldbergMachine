@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorWhenHit : MonoBehaviour
-{
+public class ChangeColorIfHitHammer : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Holder")
+        if (collision.gameObject.name == "Ball Start Holder")
         {
             collision.gameObject.GetComponent<Renderer>().material.color = Color.green;
         }
