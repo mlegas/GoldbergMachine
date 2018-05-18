@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorIfHitHammer : MonoBehaviour
+public class ChangeColorIfHitDomino : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Ball Start Holder")
         {
-            collision.gameObject.GetComponent<Renderer>().material.color = Color.green;
+            collision.gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV();
         }
     }
 }
