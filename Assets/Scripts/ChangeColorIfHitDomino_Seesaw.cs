@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorIfHitDomino : MonoBehaviour
+public class ChangeColorIfHitDomino_Seesaw : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Ball Start Holder")
+        if (collision.gameObject.tag == "Domino")
         {
             collision.gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV();
         }
