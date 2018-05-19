@@ -6,7 +6,7 @@ public class ChangeColorIfHitWreckingBall : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "BigBall")
+        if (collision.gameObject.tag == "BigBall2")
         {
             collision.gameObject.GetComponent<Renderer>().material.color = Color.black;
         }

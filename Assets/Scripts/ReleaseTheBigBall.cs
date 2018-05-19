@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ReleaseTheBigBall : MonoBehaviour {
 
-    GameObject bigBall;
+    private GameObject bigBall;
     private void Start()
     {
         bigBall = GameObject.FindWithTag("BigBall");
