@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorIfHitRamp : MonoBehaviour
+public class ChangeColorIfHitSwitch : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Release Collider")
+        if (collision.gameObject.name == "Switch")
         {
             collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }
 }
+
