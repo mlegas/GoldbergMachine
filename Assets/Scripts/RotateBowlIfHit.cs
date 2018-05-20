@@ -11,6 +11,8 @@ public class RotateBowlIfHit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ball")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             hit = true;
         }
     }

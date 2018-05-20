@@ -8,6 +8,8 @@ public class ChangeColorIfHitRamp : MonoBehaviour
     {
         if (collision.gameObject.name == "Release Collider")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }

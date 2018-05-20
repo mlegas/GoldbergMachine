@@ -8,6 +8,8 @@ public class ChangeColorIfHitDomino : MonoBehaviour
     {
         if (collision.gameObject.tag == "Domino")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             collision.gameObject.GetComponent<Renderer>().material.color = Random.ColorHSV();
         }
     }

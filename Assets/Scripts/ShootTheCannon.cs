@@ -8,11 +8,12 @@ public class ShootTheCannon : MonoBehaviour
     {
         if (collision.gameObject.name == "CannonShooter")
         {
-            var rigidBody = gameObject.GetComponent<Rigidbody>();
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
 
-            var cannonForce = gameObject.transform.up * 5000f * Time.deltaTime;
-
-            var position = gameObject.transform.position;
+            var rigidBody = this.gameObject.GetComponent<Rigidbody>();
+            var cannonForce = this.gameObject.transform.up * 5000f * Time.deltaTime;
+            var position = this.gameObject.transform.position;
 
             rigidBody.AddForceAtPosition(cannonForce, position, ForceMode.VelocityChange);
         }

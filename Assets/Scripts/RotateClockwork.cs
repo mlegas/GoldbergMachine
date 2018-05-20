@@ -6,6 +6,6 @@ public class RotateClockwork : MonoBehaviour
 {
 	void Update ()
     {
-        this.gameObject.transform.Rotate(new Vector3(0, -45, 0) * Time.deltaTime);
+        this.gameObject.transform.Rotate(new Vector3(0, -30, 0) * Time.deltaTime);
     }
 }

@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorIfHitPing : MonoBehaviour
+public class PlaySoundIfHitFaller : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ping")
+        if (collision.gameObject.tag == "Faller")
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
-            collision.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
         }
     }
 }
