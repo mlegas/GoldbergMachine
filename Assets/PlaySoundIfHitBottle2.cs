@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeColorIfHitSlider : MonoBehaviour
+public class PlaySoundIfHitBottle2 : MonoBehaviour
 {
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Slider")
+        if (collision.gameObject.tag == "Bottle")
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
-            collision.gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }
 }

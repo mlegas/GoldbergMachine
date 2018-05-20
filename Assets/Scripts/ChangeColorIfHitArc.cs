@@ -8,6 +8,8 @@ public class ChangeColorIfHitArc : MonoBehaviour
     {
         if (collision.gameObject.tag == "Arc")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
             collision.gameObject.GetComponent<Renderer>().material.color = Color.blue;
         }
     }
