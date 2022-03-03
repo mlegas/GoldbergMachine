@@ -10,4 +10,4 @@ Other than that, everything should work fine. The machine has a main menu and a 
 
 ## Demo
 
-Demo gameplay of the machine can be watched on YouTube by clicking [here](https://www.youtube.com/watch?v=I_RDwcEe2UE).
+Demo gameplay of the machine can be watched on YouTube by clicking [here](https://www.youtube.com/watch?v=oHZAyHYOKNk).
