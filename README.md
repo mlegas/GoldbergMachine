@@ -14,4 +14,4 @@ Demo gameplay of the machine can be watched on YouTube by clicking [here](https:
 
 ## Documentation
 
-Further information about the project can be found in the report provided as the Report.pdf file.
+Further information about the project can be found in the report provided as the `Report.pdf` file.
